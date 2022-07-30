@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>The Lucky Page</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container">
+        <img width="60px" src="{{url_for('static', filename=icon)}}">
+         <a href="{{url_for('color_page')}}">Color</a>
+        <h1>Your lucky {{category}} is</h1>
+        <h3 style="color:{{lucky_item}}">{{lucky_item}}</h3>
+        <a href="{{url_for('week_page')}}">Week</a>
+          
+          
+        <a href="{{url_for('month_page')}}">Month</a>
+        </div>
+    </body>
+</html><script type="application/javascript" src="/share.js"></script>
